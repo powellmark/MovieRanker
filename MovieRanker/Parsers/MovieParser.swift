@@ -40,4 +40,8 @@ extension URLSession {
     func movieTask(with url: URL, completionHandler: @escaping (Movie?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
         return self.codableTask(with: url, completionHandler: completionHandler)
     }
+    
+    func searchTask(with url: URL, completionHandler: @escaping (Search?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
+        return self.codableTask(with: url, completionHandler: completionHandler)
+    }
 }
