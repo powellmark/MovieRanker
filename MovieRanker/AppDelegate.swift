@@ -15,6 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if let url = URL(string: "http://www.omdbapi.com/?apikey=66d1989f&t=Friday") {
+            let task = URLSession.shared.movieTask(with: url) { movie, response, error in
+                print(movie)
+            }
+            task.resume()
+        }
         return true
     }
 
