@@ -22,3 +22,10 @@ Going to play with Codable for the first time today in order to parse the result
 Also, not a huge fan of omdb capitalizing the properties in the response data, so making use of CodingKeys to translate to a cleaner naming scheme.
 
 Found a great resourse: https://app.quicktype.io that helps you create the struct and helper function by just pasting example JSON into the service.
+
+9/25
+
+Going to play with SwiftUI some today and try to get a "detail" screen complete for a Movie object. The Movie struct will be built from the API call and that was complete a few days ago.
+
+Got a decent (not great) layout of all the text information. Turns out loading an image from a URL is more involved than expected. Will tackle that after a break.
+
