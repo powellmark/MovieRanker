@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if let url = URL(string: "http://www.omdbapi.com/?apikey=66d1989f&s=Friday") {
             let task = URLSession.shared.searchTask(with: url) { (search, response, error) in
-                print("\(search)")
+                print("\(search?.search.count)")
             }
             task.resume()
         }
